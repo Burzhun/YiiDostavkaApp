@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: *openstat*
+Disallow: *utm*
+Disallow: /search
+Disallow: /font/
+Disallow: /partners
+Disallow: /user/
+Host: www.edostav.ru
+Sitemap: http://www.edostav.ru/sitemap.xml
+

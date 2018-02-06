@@ -1,0 +1,133 @@
+
+RewriteCond %{HTTP_HOST}   ^www.dostavka.az
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^upload/goods/.*\.jpg$ /images/default_az.jpg [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^upload/goods/.*\.jpg$ /images/default_ru.jpg [L]
+
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+RewriteCond %{HTTP_HOST}   ^www.derbent.dostavka05.ru
+RewriteRule ^(.*)          http://derbent.dostavka05.ru/$1 [L,R]
+RewriteCond %{HTTP_HOST}   ^www.kaspiysk.dostavka05.ru
+RewriteRule ^(.*)          http://kaspiysk.dostavka05.ru/$1 [L,R]
+RewriteCond %{HTTP_HOST}   ^www.vladikavkaz.edostav.ru
+RewriteRule ^(.*)          http://vladikavkaz.edostav.ru/$1 [L,R]
+
+RewriteCond %{HTTP_HOST}   ^www.dostavka05.ru
+RewriteRule ^sitemap\.xml$ sitemap1.xml [L]
+RewriteRule ^robots\.txt$ robots_default.txt
+
+RewriteCond %{HTTP_HOST}   ^derbent.dostavka05.ru 
+RewriteRule ^robots(.*) seo/derbent/robots.txt
+RewriteCond %{HTTP_HOST}   ^derbent.dostavka05.ru
+RewriteRule ^sitemap\.xml$ seo/derbent/sitemap.xml
+
+RewriteCond %{HTTP_HOST}   ^www.edostav.ru 
+RewriteRule ^robots(.*) seo/stavropol/robots.txt
+RewriteCond %{HTTP_HOST}   ^www.edostav.ru
+RewriteRule ^sitemap\.xml$ seo/stavropol/sitemap.xml
+
+RewriteCond %{HTTP_HOST}   ^www.dostavka.az
+RewriteRule ^robots(.*) seo/baku/robots.txt
+RewriteCond %{HTTP_HOST}   ^dostavka.az
+RewriteRule ^robots(.*) seo/baku/robots.txt
+RewriteCond %{HTTP_HOST}   ^www.dostavka.az
+RewriteRule ^sitemap\.xml$ seo/baku/sitemap.xml
+
+RewriteCond %{HTTP_HOST}   ^kaspiysk.dostavka05.ru
+RewriteRule ^robots(.*) seo/kaspiysk/robots.txt
+RewriteCond %{HTTP_HOST}   ^kaspiysk.dostavka05.ru
+RewriteRule ^sitemap\.xml$ seo/kaspiysk/sitemap.xml
+
+RewriteCond %{HTTP_HOST}   ^vladikavkaz.edostav.ru
+RewriteRule ^robots(.*) seo/vladikavkaz/robots.txt
+RewriteCond %{HTTP_HOST}   ^vladikavkaz.edostav.ru
+RewriteRule ^sitemap\.xml$ seo/vladikavkaz/sitemap.xml
+
+RewriteCond %{HTTP_HOST} ^w1ww\.dostavka05\.
+RewriteRule ^(.*)          http://dostavka05.ru/$1 [L,R]
+
+
+
+RewriteCond !%{HTTPS} off
+RewriteRule ^sitemap\.xml$ sitemap1.xml [L]
+RewriteRule ^robots\.txt$ robots_default.txt
+
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+RewriteCond %{HTTP_HOST}   !^$
+RewriteCond %{HTTPS} off [NC]
+RewriteCond !%{HTTPS} on [NC]
+RewriteCond %{HTTP_HOST}   !^derbent\. [NC]
+RewriteCond %{HTTP_HOST}   !^new\. [NC]
+RewriteCond %{HTTP_HOST}   !^kaspiysk\. [NC]
+RewriteCond %{HTTP_HOST}   !^vladikavkaz\. [NC]
+RewriteCond %{HTTP_HOST}   ^www\.          [NC]
+RewriteCond %{HTTP_HOST}   (.+)$
+RewriteRule ^(.*)          https://%1/$1 [L,R]
+# if a directory or a file exists, use it directly
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteCond %{HTTPS} off 
+RewriteCond %{HTTP_HOST}   !^derbent\.$ [NC]
+RewriteCond %{HTTP_HOST}   !^kaspiysk\.$ [NC]
+RewriteCond %{HTTP_HOST}   !^vladikavkaz\.$ [NC]
+RewriteRule . index.php
+
+RewriteCond %{HTTP_HOST}   ^derbent\. [NC]
+RewriteCond %{HTTP_HOST}   ^kaspiysk\. [NC]
+RewriteCond %{HTTP_HOST}   ^vladikavkaz\. [NC]
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)          index.php
+
+
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</IfModule>
+
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf|woff)$">
+	Header set Cache-Control "max-age=691200"
+</FilesMatch>
+
+
+Redirect 301 /wp-login.php http://www.dostavka05.ru/404.php
+Redirect 301 /wp-admin/ http://www.dostavka05.ru/404.php
+Redirect 301 /wp-content/ http://www.dostavka05.ru/404.php
+Redirect 301 /wp-admin/images/wordpress-logo.png http://www.dostavka05.ru/404.php
+Redirect 301 /wp-admin/css/wp-admin.css http://www.dostavka05.ru/404.php
+Redirect 301 /bitrix/admin/ http://www.dostavka05.ru/404.php
+Redirect 301 /bitrix/themes/.default/images/auth_pict.gif http://www.dostavka05.ru/404.php
+Redirect 301 /bitrix/js/main/core/core.css http://www.dostavka05.ru/404.php
+Redirect 301 /bitrix/themes/.default/adminstyles.css http://www.dostavka05.ru/404.php
+Redirect 301 /node/ http://www.dostavka05.ru/404.php
+Redirect 301 /modules/system/system.css http://www.dostavka05.ru/404.php
+Redirect 301 /modules/system/system.base.css http://www.dostavka05.ru/404.php
+Redirect 301 /media/system/js/mootools.js http://www.dostavka05.ru/404.php
+Redirect 301 /templates/system/css/system.css http://www.dostavka05.ru/404.php
+Redirect 301 /manager/media/style/MODxCarbon/images/misc/logo.png http://www.dostavka05.ru/404.php
+Redirect 301 /manager/media/style/MODxCarbon/images/misc/login-logo.png http://www.dostavka05.ru/404.php
+Redirect 301 /manager/media/script/mootools/mootools.js http://www.dostavka05.ru/404.php
+Redirect 301 /manager/media/style/MODxCarbon/style.css http://www.dostavka05.ru/404.php
+Redirect 301 /manager/ http://www.dostavka05.ru/404.php
+Redirect 301 /manager/templates/default/images/style/modx-logo-header.png http://www.dostavka05.ru/404.php
+Redirect 301 /manager/templates/default/images/restyle/headers.jpg http://www.dostavka05.ru/404.php
+Redirect 301 /manager/templates/default/css/login-min.css http://www.dostavka05.ru/404.php
+Redirect 301 /netcat/admin/skins/default/img/logo.png http://www.dostavka05.ru/404.php
+Redirect 301 /netcat/admin/skins/default/css/style.css http://www.dostavka05.ru/404.php
+Redirect 301 /netcat/admin/skins/default/css/login.css http://www.dostavka05.ru/404.php
+Redirect 301 /installed http://www.dostavka05.ru/404.php
+Redirect 301 /admin/content/sitetree/ http://www.dostavka05.ru/404.php
+Redirect 301 /styles/skins/mac/design/css/style.css http://www.dostavka05.ru/404.php
+Redirect 301 /ds-comf/ds-form/js/jquery.jgrowl.map http://www.dostavka05.ru/404.php
+Redirect 301 /administrator/index.php http://www.dostavka05.ru/404.php
+Redirect 301 /admin.php http://www.dostavka05.ru/404.php
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml

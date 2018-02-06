@@ -1,0 +1,7 @@
+#wrapper{
+background: #e4dfdf;
+}
+.body-img{
+background:url(/images/body-bg3.jpg) center top fixed !important;
+background-size:cover;
+}

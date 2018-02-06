@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: *openstat*
+Disallow: *utm*
+Disallow: /search
+Disallow: /font/
+Disallow: /partners
+Disallow: /user/
+Host: kaspiysk.dostavka05.ru
+Sitemap: http://kaspiysk.dostavka05.ru/sitemap.xml

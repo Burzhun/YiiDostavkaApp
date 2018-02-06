@@ -1,0 +1,113 @@
+/***********************/
+.message
+{
+	z-index: 9999;
+           position: fixed;
+    border: 1px solid;
+    border-radius: 3px;
+    clear: both;
+
+
+     padding: 15px;
+    padding-left: 30px;
+  _position: absolute;
+    /* The inset shadow */
+    -webkit-box-shadow: inset 1px 1px 0px 0px rgba(255, 255, 255, 0.65);
+    -moz-box-shadow: inset 1px 1px 0px 0px rgba(255, 255, 255, 0.65);
+    box-shadow: inset 1px 1px 0px 0px rgba(255, 255, 255, 0.65);
+
+         width: 100%;
+         border: 1px solid;
+         color: #fff;
+       
+         display:none;
+}
+
+
+
+.success-mess
+{
+	border: none;
+         background-color: #7f9e6c;
+         border-color: #55a12c; 
+         color: #65715B;
+}
+
+.error-mess
+{
+    border: none;
+         background-color: red;
+         border-color: #55a12c; 
+         color: #65715B;
+}
+.message h3
+{
+         margin: 0 0 5px 0;                                                     
+}
+
+.message p
+{
+         margin: 0;                                                     
+}
+.message span.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    margin-top: -8px;
+
+}
+
+
+
+
+
+
+
+
+
+.success-message{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.error-message{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+}
+
+
+.error-message ul{
+    display: inline-block;
+}
+.error-message ul li{
+    list-style: decimal;
+    text-align: left;
+}
+
+@-webkit-keyframes animate-bg
+{
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}
+
+
+@-moz-keyframes animate-bg
+{
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}

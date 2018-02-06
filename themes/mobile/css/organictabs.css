@@ -1,0 +1,27 @@
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+
+#example-two{
+	font-size: 14px;
+}
+#example-two .list-wrap {padding: 10px; margin: 0 0 15px 0; border-radius:6px;border-top-left-radius: 0;  }
+
+#example-two ul { list-style: none; }
+#example-two ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #fff; }
+#example-two ul li a:hover { background: #333; color: white; }
+#example-two ul li:last-child a { border: none; }
+
+#example-two .nav { overflow: hidden; margin-bottom: 0;border-bottom: 1px solid #b5babb }
+#example-two .nav li {  float: left; margin: 0 1px 0 0; text-align: center; }
+#example-two .nav li.last { margin-right: 0; }
+#example-two .nav li a { display: block; padding: 10px 15px;border-top-left-radius: 5px;border-top-right-radius: 5px; background: #dae2e3; color: #000;font-size: 16px; text-decoration: none;
+ 
+  text-align: center; border: 0; }
+
+#example-two li a.current,#example-two li a.current:hover { }
+ #example-two a.current{
+	background: #b5babb!important;      
+	
+}
+#example-two .nav li a:hover, #example-two .nav li a:focus { background: #999;}

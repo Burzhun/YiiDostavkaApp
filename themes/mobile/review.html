@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="/themes/mobile/css/style.css" rel="stylesheet">
+	<script src="/themes/mobile/js/jquery.js" type="text/javascript"></script>
+	<script src="/themes/mobile/js/popBox.js" type="text/javascript"></script> 
+ 
+	<link rel="apple-touch-icon" sizes="57x57" href="/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/touch-icon-iphone-retina.png"> 
+	<link rel="apple-touch-icon" sizes="152x152" href="/touch-icon-ipad-retina.png"> 
+	<script src="/themes/mobile/js/mainScript.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="menuHead">						 
+				<span></span>
+				<span></span>
+				<span></span>						 
+			</div>
+			<a href="/" class="logo">
+				<img src="/themes/mobile/img/logo.png" alt="">
+			</a>
+
+			<div class="menuHeadRight">	
+				<img src="/themes/mobile/img/userIcon.png" alt="">					 
+				<div>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header><!-- .header-->
+
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="/pages/about">
+						<img src="/themes/mobile/img/iconMenu1.png" alt="">
+						о нас
+					</a>
+				</li>
+				<li>
+					<a href="/bonus">
+						<img src="/themes/mobile/img/iconMenu2.png" alt="">
+						бонусы
+					</a>
+				</li>
+				<li>
+					<a href="/blog">
+						<img src="/themes/mobile/img/iconMenu3.png" alt="">
+						блог
+					</a>
+				</li>
+				<li>
+					<a href="/pages/contacts">
+						<img src="/themes/mobile/img/iconMenu4.png" alt="">
+						контакты
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="userDropBox">
+			<div class="userDropBoxHead">
+				ЛИЧНЫЙ КАБИНЕТ:
+			</div>
+			<div class="userDropBoxForm">
+				<form action="">
+					<div id="error-login" name="error-login" style="color:#DD3333;margin:-10px 0 10px 0;"></div>
+					
+					<div class="row">
+						<label for="">Логин: </label><input name="UserLogin[username]" id="UserLogin_username" type="text" placeholder="Email">
+					</div>
+					<div class="row">
+						<label for="">Пароль:</label><input name="UserLogin[password]" id="UserLogin_password" type="password" placeholder="Password">
+					</div>
+					<div><input name="UserLogin[rememberMe]" id="UserLogin_rememberMe" class='remember' type="checkbox">Запомнить меня</div>
+									<div style='clear:both'></div>
+				<div class="userDropBoxLink">
+					<a href="#" class="regButton">Зарегистрироваться</a>
+					<input type="submit" name="" id="" class='enterButton' value='Войти'>
+				</div>
+				</form>
+			</div>
+			<div class="userDropBoxHead">
+				Войти через:
+			</div>
+			<div class="userDropBoxSocial">
+				<img src="/themes/mobile/img/social.png" alt="">
+			</div>
+		</div>
+		
+
+		
+<div class="topNav">
+	<a href="" class="cartIcon">
+		<span>0</span>
+	</a>
+	
+	<a href='#' class="backLink">
+		<img src="/themes/mobile/img/arrowBack.png" alt=""> Назад
+	</a>
+</div>
+
+<main class="content">
+	<div class="mainBox shop">
+		<div class="padding10">
+			<div class="shopBlock">
+				<a href="#" class="shopImg">
+											<img style="max-width:70px;" src="/upload/partner/partner_60.png" alt="доставка еды, махачкала, дагестан, El Gusto"/>
+					 
+				</a>
+				<div class="shopRight">
+					<a href="#" class="shopTitle">El Gusto</a>
+					<div class="shopShort">Заказывайте круглосуточно, приходите в кофейни на Ярагского 7 и на Дахадаева 42
+Заказ свыше 1000?!  Комплимент от нас, вам в подарок.
+
+Заказ свыше 500 рублей - доставка бесплатно</div>
+					<div style='clear:both'></div>
+					<div class="shopAttr">
+						<span>500 <?php echo City::getMoneyKod() ;?></span>
+						Минимальная <br>
+						сумма доставки
+					</div>
+					<div class="shopAttr">
+						<span>Бесплатно</span>
+						Стоимость <br>
+						доставки
+					</div>
+					<div class="shopAttr">
+						<span>45 мин.</span>
+						Время <br>
+						доставки
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="shopOpenNav">
+			<a href="">Меню</a>
+			<a href="">Доп. инфо</a>
+			<a href="" class='shopOpenNavActive'>Отзывы</a>
+
+		</div>	  	 
+	</div>
+	
+
+	<i class='noteText'>Войдите в профиль, чтобы оставить отзыв о ресторане</i>
+
+	<div class="borderBox">
+		
+
+			<div class="reviewForm">
+				<form action="">
+					<div class="textareaBox">
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</div>						
+						<div class="likeBox">
+							<label class='activeRadio'><input type="radio" name='0'><img src="/themes/mobile/img/iconLike.png" alt=""></label>
+							<label><input type="radio" name='1'><img src="/themes/mobile/img/iconDisLike.png" alt=""></label>
+							<input type="submit"  value='Отправить'>
+						</div>				 
+				</form>
+			</div>
+	</div>
+
+		<div class="borderBox likeReview">
+			<div class="reviewTop">
+				<span class="reviewName"><img src="/themes/mobile/img/iconLike.png" alt="">Алена:</span>
+				<span class="reviewDate">09.12.2014</span>
+			</div>
+			<div class="reviewText">
+				Самые вкусные суши и роллы в Москве! Всегда 
+				свежие, нежные и все в качественных индивидуальных 
+				упаковках
+			</div>
+		</div>
+
+		<div class="borderBox dislikeReview">
+			<div class="reviewTop">
+				<span class="reviewName"><img src="/themes/mobile/img/iconDisLike.png" alt="">не Алена:</span>
+				<span class="reviewDate">09.12.2014</span>
+			</div>
+			<div class="reviewText">
+				Самые вкусные суши и роллы в Москве! Всегда 
+				свежие, нежные и все в качественных индивидуальных 
+				упаковках
+			</div>
+		</div>
+	 
+
+
+	 
+
+	</main><!-- .content -->
+
+
+
+ 
+
+
+
+
+
+	</div><!-- .wrapper -->
+<footer class="footer">
+</footer><!-- .footer -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

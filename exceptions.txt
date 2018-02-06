@@ -1,0 +1,7 @@
+Array
+(
+    [code] => 42
+    [message] => CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.soon_opening' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_goods` `t` WHERE (date_change > 1) AND (publication=1) ORDER BY t.soon_opening , pos asc
+    [file] => C:\OpenServer\domains\dostavka05.local\yii\framework\db\CDbCommand.php
+    [line] => 528
+)

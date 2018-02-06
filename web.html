@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<title></title>
+	<script type="text/javascript">
+		$(document).on('click','#add',function(){
+			img = $('.imgs img');
+			//console.log(img.height()+"<br>");
+			//console.log(img.prop('height')+"<br>");
+
+			var newImg = document.createElement('img');
+			newImg.src = $(img).attr('src');
+			$(newImg).on('load',function(){
+				console.log($(newImg).prop('height')+"<br>");
+				$(newImg).height('auto');
+				console.log($(newImg).height());
+
+			})
+
+
+			img.width('auto');
+
+			//console.log(img.width());
+		})
+	</script>
+	<style type="text/css">
+		.img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="imgs" style="width:100px; height:100px">
+		<img class="img" src="/images/blog_img.png">
+	</div>
+	<input id="add" type="button" value="Add">
+
+</body>
+</html>

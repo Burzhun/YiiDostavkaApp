@@ -1,0 +1,13 @@
+.idea
+assets/*
+upload/*
+backup
+new
+prototype
+protected/runtime/*
+404.txt
+content.txt
+logs.txt
+exeptions.txt
+themes/mobile/img/banners*
+awstats/*

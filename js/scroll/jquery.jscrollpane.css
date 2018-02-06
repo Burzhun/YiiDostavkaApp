@@ -1,0 +1,162 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+ 
+ 
+.scroll-pane {
+	 /* Ширина видимой области*/
+	 /* Высота видимой области*/
+	overflow: auto; /* Если отключены скрипты это правило позволит отобразить обычный скролл */
+	
+	
+}
+
+
+.jspContainer
+{
+		
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	width: 9px;
+	height: 100%;
+	margin-bottom:5px;
+	
+	
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 300px !important;
+	height: 16px;
+	margin-left:30px !important;
+	
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+	
+}
+
+.jspTrack
+
+{
+	
+	position: relative;
+	background:#eaeaea;
+	border:1px solid #c4c4c4;
+	border-radius:4px;
+}
+.jspHorizontalBar .jspDrag{
+	width:300px !important;
+}
+.jspDrag
+{
+	background:#ffffff;
+	border:1px solid #c1c1c1;
+	width:11px;
+	margin-left:-2.5px;
+	box-shadow:0px 1px  2px #999999; 
+	
+	
+	
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	border-radius:7px;
+	
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+.jspDragTop{
+	height:15px;
+	width:16px;
+	
+}
+.jspDragBottom{
+	height:15px;
+	
+	position:absolute;
+	bottom:0;
+	width:16px;	
+}

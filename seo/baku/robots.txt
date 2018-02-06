@@ -1,0 +1,17 @@
+User-agent: *
+
+Disallow: *openstat*
+
+Disallow: *utm*
+
+Disallow: /search
+
+Disallow: /font/
+
+Disallow: /partners
+
+Disallow: /user/
+
+Host: www.dostavka.az
+Sitemap: http://www.dostavka.az/sitemap.xml
+

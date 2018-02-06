@@ -1,0 +1,38 @@
+
+.menu_list {
+    width: 170px;
+}
+.menu_head {
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    margin:1px;
+    font-size: 15px;
+    background:url(../images/down.png) center right no-repeat;
+}
+.menu_body {
+    display:none;
+}
+.menu_body a{
+    display:block;
+    color: #504e49;
+	margin-left:10px;
+    padding-top:10px;
+    padding-left:10px;
+    text-decoration:none;
+}
+.menu_body a:hover{
+    color:#3a6a9c;
+    text-decoration:underline;
+}
+.menu_head a{
+    text-decoration: none;
+}
+.menu_head:hover{
+    text-decoration: none;
+    color:#3a6a9c;
+}
+.menu_head a:hover{
+    text-decoration: none;
+    color:#b99346;
+}

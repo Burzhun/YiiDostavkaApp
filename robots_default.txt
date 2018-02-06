@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: *openstat*
+Disallow: *utm*
+Disallow: /search
+Disallow: /font/
+Disallow: /partners
+Disallow: /user/
+Host: www.dostavka05.ru
+Sitemap: http://www.dostavka05.ru/sitemap.xml

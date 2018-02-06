@@ -1,0 +1,1 @@
+/opt/php5.4/bin/php-cgi

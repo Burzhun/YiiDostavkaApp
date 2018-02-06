@@ -1,0 +1,255 @@
+.diva {
+	margin-left:-8px;
+}
+
+.diva a.link {
+	border-bottom: 1px solid #96C4D1;
+}
+.diva a.link:hover {
+	text-decoration: none;
+}
+.diva a.button {
+	border-bottom: 1px dotted #96C4D1;
+}
+.diva a.button:hover {
+	text-decoration: none;
+}
+
+
+.diva .popup section.main .lang-input {
+	/* lift language inputs according bootstrap style */
+	margin-bottom: -1px;
+}
+
+.diva .popup section.main label {
+	color: #009900;
+}
+
+.diva .popup section.main .errorMessage {
+	color: #ff0000;
+}
+
+
+.diva .popup section.main .comment {
+	margin-bottom: 1em;
+}
+.diva .popup section.main .comment textarea {
+	display: none;
+	font-style: italic;
+	border: none;
+	width: 100%;
+	height: 4em;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.diva .popup section.main {
+	margin: 70px 0 58px 0;
+	padding: 1em;
+	
+}
+
+.diva .popup footer {
+	/*padding: 1em;*/
+	box-sizing: border-box;
+	background-color: #3c4c5d;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.diva .popup footer > ol {
+	/* fix bootstrap */
+	margin: 0;
+}
+
+.diva .popup footer > ol.left {
+	float: left;
+}
+.diva .popup footer > ol.right {
+	float: right;
+}
+
+.diva .popup footer > ol > li {
+	list-style: none;
+	margin: 0 0 0 0;
+	display: inline-block;
+}
+.diva .popup footer > ol > li.separator {
+	width: 2em;
+}
+
+.diva .popup header {
+	padding: 1em;
+	box-sizing: border-box;
+	background-color: #3c4c5d;
+	color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.diva .popup header > ol {
+	/* fix bootstrap */
+	margin: 0;
+}
+
+.diva .popup header > ol > li {
+	list-style: none;
+	margin: 0 2em 0 0;
+	display: inline-block;
+}
+
+.diva .popup header > ol > li dl {
+	margin: 0;
+}
+
+.diva .popup header > ol > li dt, 
+.diva .popup header > ol > li dd {
+	display: inline-block;	
+}
+
+.diva .popup header > ol > li dt:after {
+	content: ':';
+} 
+
+.diva .popup header > ol > li dt {
+	font-weight: normal;
+	color: #77cc77;
+}
+.diva .popup header > ol > li dd {
+	margin: 0;
+}
+
+
+.diva .popup header > ol > li.main > i {
+	display: inline-block;
+	margin-right: 0.5ex;
+	width: 16px; height: 16px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+
+.diva .table-page .tree-column {
+	margin-top: 16px;
+}
+
+.diva .table-page .tree-column .treeview li a.link,
+.diva .table-page .tree-column .treeview li span {
+	display: inline-block;
+	line-height: 1em;
+	vertical-align: top;
+	margin-left: 2px;
+}
+.diva .table-page .tree-column .treeview li > span.sel {
+	font-weight: bold;
+}
+
+
+
+
+.diva .table-page h1 {
+	font-size: 18px;
+}
+
+.diva .table-page .table {
+	/* fix bootstrap */
+	width: auto;
+}
+
+.diva .table-page ul.yiiPager a {
+	/* fix yii pager */
+	border: none;
+}
+
+
+.diva .table-page .grid-view th {
+	background-color: #3c4c5d;
+}
+.diva .table-page .grid-view th a {
+	color: white;
+	border-bottom: 1px dotted white;
+}
+.diva .table-page .grid-view th a.asc:after {
+	content: '↓';
+}
+.diva .table-page .grid-view th a.desc:after {
+	content: '↑';
+}
+
+.diva .table-page .grid-view th a:hover {
+	text-decoration: none;
+	color: gray;
+	border-bottom-color: gray;
+}
+
+
+.diva .table-page .grid-view .filters input,
+.diva .table-page .grid-view .filters textarea,
+.diva .table-page .grid-view .filters select {
+  /* fix yii grid view */
+	width: auto;
+	
+	/* fix bootstrap for table filters */
+	margin: 0;
+}
+.diva .table-page .grid-view .filters .filter-id input {
+	width: 30px;
+}
+
+
+.diva .main-menu-column {
+
+}
+.diva .main-menu {
+	padding: 0 0 2em 0;
+	background-color: #3c4c5d;
+	
+	/* for inavitve menu items */
+	color: #888;
+	
+	/* fix bootstrap */
+	margin: 0;
+}
+
+.diva .main-menu .separator {
+	height: 1em;
+}
+
+.diva .main-menu > li > a {
+	color: white;
+	border-bottom-color: #999;
+}
+.diva .main-menu > li > a:hover {
+	color: #ccc;
+	border-bottom-color: #666;
+}
+
+
+
+.diva .main-menu > li {
+	margin: 0 0 0.8em 10%;
+	list-style: none;
+	line-height: 1em;
+}
+.diva .main-menu > li.current {
+	font-weight: bold;
+	color: #f5efbb;
+}
+
+
+.diva .main-menu > li.site-logo {
+	padding: 20px 0;
+}
+.diva .site-logo > a > span {
+	font-size: 28px;
+}
+
+
+
+.diva .row-fluid [class*="span"],
+.diva.row-fluid [class*="span"] {
+	/* fix bootstrap  */
+	/*overflow-x: auto; */
+}

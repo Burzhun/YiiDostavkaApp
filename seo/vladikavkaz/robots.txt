@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: *openstat*
+Disallow: *utm*
+Disallow: /search
+Disallow: /font/
+Disallow: /partners
+Disallow: /user/
+Host: vladikavkaz.edostav.ru
+Sitemap: http://vladikavkaz.edostav.ru/sitemap.xml

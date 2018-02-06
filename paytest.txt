@@ -1,0 +1,33 @@
+POST: 
+Array
+(
+    [xml] => PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48cmVzcG9uc2U PHZlcnNpb24 MS4yPC92ZXJzaW9uPjx0eXBlPnJlc3VsdDwvdHlwZT48bWVyY2hhbnRfaWQ NTk1NjwvbWVyY2hhbnRfaWQ PGxhbmd1YWdlPnJ1PC9sYW5ndWFnZT48b3JkZXJfaWQ MTE1LjQxMzg2PC9vcmRlcl9pZD48YW1vdW50PjIwLjAwPC9hbW91bnQ PGN1cnJlbmN5PlJVQjwvY3VycmVuY3k PGRlc2NyaXB0aW9uPtCf0L7Qv9C 0LvQvdC10L3QuNC1INC70LjRhtC10LLQvtCz0L4g0YHRh9C10YLQsCDQtNC70Y8gIkRla2FydE1lZGlhIjwvZGVzY3JpcHRpb24 PHBheW1vZGU cWl3aWxrPC9wYXltb2RlPjx0cmFuc19pZD4xNDM2ODMyPC90cmFuc19pZD48c3RhdHVzPmZhaWw8L3N0YXR1cz48ZXJyb3JfbXNnPjwvZXJyb3JfbXNnPjxvdGhlcj48IVtDREFUQVtdXT48L290aGVyPjwvcmVzcG9uc2U 
+    [sign] => ZGI5Mjg3Y2Q5N2IxY2JlODE3ZTUxYzZhZTQ0OTkyYjQ=
+)
+decoded data: 
+SimpleXMLElement Object
+(
+    [version] => 1.2
+    [type] => result
+    [merchant_id] => 5956
+    [language] => ru
+    [order_id] => 115.41386
+    [amount] => 20.00
+    [currency] => RUB
+    [description] => Пополнение лицевого счета для "DekartMedia"
+    [paymode] => qiwilk
+    [trans_id] => 1436832
+    [status] => fail
+    [error_msg] => SimpleXMLElement Object
+        (
+        )
+
+    [other] => SimpleXMLElement Object
+        (
+        )
+
+)
+xml(md5): 
+304b2bae888cee22b44654089195cb82response md5: 
+6e1d368e867865759c107591d29963d4xml string: 
+string(450) "<?xml version="1.0" encoding="UTF-8"?><response><version>1.2</version><type>result</type><merchant_id>5956</merchant_id><language>ru</language><order_id>115.41386</order_id><amount>20.00</amount><currency>RUB</currency><description>Пополнение лицевого счета для "DekartMedia"</description><paymode>qiwilk</paymode><trans_id>1436832</trans_id><status>fail</status><error_msg></error_msg><other><![CDATA[]]></other></response>"
